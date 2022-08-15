@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* marquee part */
+
+        .marquee {
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .course_content {
+            text-align: center;
+        }
+
+        .course_container {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .course_cards img {
+            border-radius: 20px;
+            width: clamp(200px, calc((100vw - 375px) / 5.325 + 200px), 400px)
+        }
+
+        .pic_container {
+            display: flex;
+            animation: marquee 50s infinite linear;
+        }
+
+        .pic_container_reverse {
+            display: flex;
+            animation: marquee_reverse 50s infinite linear;
+        }
+
+        .course_cards {
+            flex-basis: 20%;
+            flex-shrink: 0;
+            padding: 8px;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes marquee_reverse {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="marquee">
+        <div class="course_container">
+            <!-- 課程細項 -->
+            <div class="pic_container">
+                <div class="course_cards">
+                    <img src="./image/course/sport.jpg" />
+                    <div class="course_content">
+                        <h4>
+                            談論運動和活動
+                        </h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/music.jpg" />
+                    <div class="course_content">
+                        <h4>談論音樂</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/weather.jpg" />
+                    <div class="course_content">
+                        <h4>談論天氣</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/story.jpg" />
+                    <div class="course_content">
+                        <h4>描述一個故事</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/weekend.jpg" />
+                    <div class="course_content">
+                        <h4>討論你的週末</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/direction.jpg" />
+                    <div class="course_content">
+                        <h4>詢問方向</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/city.jpg" />
+                    <div class="course_content">
+                        <h4>談述你的城市</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/walking.jpg" />
+                    <div class="course_content">
+                        <h4>城市漫遊<br /><span>Getting around town</span></h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/return.jpg" />
+                    <div class="course_content">
+                        <h4>商品退貨</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/friends.jpg" />
+                    <div class="course_content">
+                        <h4>遇見新朋友</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/greeting.jpg" />
+                    <div class="course_content">
+                        <h4>問候和介紹</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/flight.jpg" />
+                    <div class="course_content">
+                        <h4>
+                            討論航班行程安排
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="marquee">
+        <div class="course_container">
+            <!-- 課程細項 -->
+            <div class="pic_container_reverse">
+                <div class="course_cards">
+                    <img src="./image/course/flight.jpg" />
+                    <div class="course_content">
+                        <h4>
+                            討論航班行程安排
+                        </h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/business_contact.jpg" />
+                    <div class="course_content">
+                        <h4>建立商務聯絡</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/interview.jpg" />
+                    <div class="course_content">
+                        <h4>工作面試</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/resturant.jpg" />
+                    <div class="course_content">
+                        <h4>預訂餐廳</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/social.jpg" />
+                    <div class="course_content">
+                        <h4>社交場合</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/feedback.jpg" />
+                    <div class="course_content">
+                        <h4>會議總結</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/meeting3.jpg" />
+                    <div class="course_content">
+                        <h4>
+                            討論可能的解決方案
+                        </h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/hobby.jpg" />
+                    <div class="course_content">
+                        <h4>討論興趣與愛好</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/health.jpg" />
+                    <div class="course_content">
+                        <h4>身體不適</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/greeting.jpg" />
+                    <div class="course_content">
+                        <h4>會議總結</h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/problem.jpg" />
+                    <div class="course_content">
+                        <h4>
+                            解決員工的問題
+                        </h4>
+                    </div>
+                </div>
+                <div class="course_cards">
+                    <img src="./image/course/sick.jpg" />
+                    <div class="course_content">
+                        <h4>身體不適</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

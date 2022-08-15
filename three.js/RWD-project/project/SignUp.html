@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTalk/SignUp</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<style>
+    html {
+        height: 900px;
+        background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+    #input_box {
+        background-color: #f7f7f7;
+        font-weight: 200;
+        border: 1px solid transparent;
+        padding: 18px 30px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+    }
+
+    .logIn_input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logIn_title {
+        text-align: center;
+    }
+
+    .logIn_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0px;
+    }
+
+    .logIn_box {
+        height: 550px;
+        width: 400px;
+        padding: 50px;
+        box-shadow: 4px 5px 20px 0px rgb(59 57 57 / 20%);
+        background-color: #fff;
+        border-radius: 30px;
+    }
+
+    .btn {
+        margin-bottom: 25px;
+        background-color: #f49988;
+        border-radius: 10px;
+        line-height: 30px;
+        border: 1px solid transparent;
+        padding: 10px;
+        box-shadow: 5px 5px 16px rgb(10, 10, 10, 10%);
+    }
+
+    .btn:hover {
+        transform: scale(1.1);
+    }
+
+    /* nav */
+    nav {
+        width: 100%;
+        z-index: 1;
+        background-color: #fff;
+        box-shadow: 1px 1px 20px -6px rgb(0 0 0 / 20%);
+        position: fixed;
+    }
+
+    .nav_container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        height: 40px;
+        padding: 10px 40px;
+    }
+
+    .book_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signUp_link {
+        padding: 20px;
+        color: #f49988;
+        font-weight: bold;
+    }
+
+
+
+    /* cloud */
+    .cloud_icon {
+        position: relative;
+    }
+
+    .cloud_backgroud {
+        position: absolute;
+        bottom: 100%;
+    }
+
+    .cloud_jack {
+        right: 150px;
+        bottom: 200px;
+        width: 400px
+    }
+
+    .cloud_lily {
+        width: 400px;
+        left: 150px;
+        bottom: 400px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <!-- logo  -->
+            <div class="nav_container">
+                <div class="nav_bar_logo">
+                    <a href="./index.html"><img src="./image/main/logo.png" width="130px" height="40px" alt=""></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="logIn_container">
+            <div class="logIn_box">
+                <div class="logIn_title">
+                    <img src="./image/icon/profile.png" alt="">
+                    <h1>Sign up</h1>
+                    <div class="logIn_input">
+                        <input type="text" placeholder="First name" id="input_box">
+                        <input type="text" placeholder="Surname" id="input_box">
+                        <input type="text" placeholder="Email" id="input_box">
+                        <input type="password" placeholder="Password" id="input_box">
+                        <a href="./SignUp.html" class="btn">建立帳戶</a>
+                    </div>
+                    <div class="forgot_password">
+                        <div class="signUp_part">
+                            <p>已是 SmartTalk 學員?<a class="signUp_link" href="./logIn.html">登入</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cloud_icon">
+            <img class="cloud_backgroud cloud_jack" src="./image/icon/cloud.png" alt="">
+            <img class="cloud_backgroud cloud_lily" src="./image/icon/cloud.png" alt="">
+        </div>
+    </header>
+</body>
+
+</html>

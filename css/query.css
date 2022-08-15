@@ -1,0 +1,221 @@
+@media (min-width: 345px) {
+    .burger {
+        display: block;
+    }
+
+    .log_in {
+        display: none;
+    }
+}
+
+/* below 768 */
+@media (min-width: 768px) {
+
+    .container_setting .title_padding,
+    .banner_earth {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .banner_earth .image_earth {
+        width: 400px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .log_in {
+        display: none;
+    }
+
+    /* study needs */
+
+    .wrapper_study_need {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .study_card {
+        margin-bottom: 50px;
+    }
+
+    .study_title {
+        text-align: center;
+    }
+
+    .study_text {
+        padding: 10px;
+    }
+
+    .study_img_box {
+        width: 380px;
+    }
+
+
+    /* course info */
+    .course_item_content p {
+        font-size: 16px;
+    }
+
+
+}
+
+
+@media (min-width: 1024px) {
+
+    /* nav */
+    .nav_free_trial {
+        display: none;
+    }
+
+    .nav_menu {
+        display: none;
+    }
+
+    /* earth animation */
+    /* .banner_earth .pin {
+        left: 70%;
+        top: 45%;
+        animation: highlight 1.5s linear infinite;
+    }
+
+    .banner_earth .pin2 {
+        left: 65%;
+        top: 30%;
+        animation-delay: .5s;
+    }
+
+    .banner_earth .pin3 {
+        left: 58%;
+        top: 55%;
+        animation-delay: 1s;
+    }
+
+    .banner_earth .pin4 {
+        left: 75%;
+        top: 60%;
+        animation-delay: .8s;
+    }
+
+    .banner_earth .pin5 {
+        left: 65%;
+        top: 75%;
+        animation-delay: .6s;
+    } */
+
+    /* log in */
+    .log_in {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .log_in a {
+        padding: 5px 5px;
+        color: #2B4057;
+        height: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .log_in .hover_stroke {
+        position: relative;
+    }
+
+    /* .current_page {
+        background-color: #fff3b0;
+        border-radius: 30px;
+    } */
+
+    .log_in .hover_stroke::after {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: #2B4057;
+        height: 2px;
+        transition: all .5s;
+    }
+
+    .log_in .hover_stroke:hover::after {
+        width: 100%;
+    }
+
+    .log_in .free_trial {
+        color: #F49977;
+    }
+
+    /* burger */
+    #active,
+    .menu_btn,
+    .burger {
+        display: none;
+    }
+
+    /* earth */
+    .banner_earth .image_earth {
+        width: 100%;
+    }
+
+    /* study needs */
+    #study_need {
+        height: 80vh;
+    }
+
+    .wrapper_study_need {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .study_text {
+        margin: 30px 0;
+        font-size: 16px;
+    }
+
+    .study_card {
+        width: 300px;
+    }
+
+    .study_img_box {
+        width: 100%;
+    }
+
+
+    /* course types */
+
+    .course_info_container {
+        display: flex;
+        width: 80%;
+    }
+
+    .course_card {
+        width: 60%;
+    }
+
+    .course_items {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .course_sticky {
+        top: 30%;
+        position: sticky;
+        width: 40%;
+        height: 500px;
+    }
+
+    .teacher_col {
+        width: clamp(200px, calc((100vw - 375px) / 17.750 + 300px), 300px);
+        height: clamp(200px, calc((100vw - 375px) / 17.750 + 300px), 300px);
+    }
+
+}

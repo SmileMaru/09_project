@@ -1,0 +1,137 @@
+/* 漸層色 */
+.gradient_fill {
+    animation: gradient_fill 5s linear infinite;
+    transform: translateZ(0);
+    background-size: 200% 200%;
+    background-image: radial-gradient(circle at 100% 60%, #F49977, #b8b8ff 73%, #fee140 88%, #ecedef 165%, #f0eff0 165%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.gradient_fill {
+    font-size: clamp(20px, calc((100vw - 375px) / 106.500 + 30px), 40px);
+}
+
+@keyframes gradient_fill {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+/* lightBox help desk =========================================== */
+
+:root {
+    --wrap_backgroud: #9CB0C6;
+    --inner_backgroud: #f1faee;
+    --message_backgroud: #caf0f8;
+    --box-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
+
+}
+
+.full_screen {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.close_icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ========= icon close ==== */
+.xmark {
+    width: 1em;
+    text-align: right;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.robot_inner {
+    position: absolute;
+    border-radius: 20px;
+    border: 6px solid var(--wrap_backgroud);
+    padding: 20px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--inner_backgroud);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info_robot {
+    display: flex;
+}
+
+/* ========= 客服 icon ==== */
+.s_head img {
+    vertical-align: top;
+}
+
+/* ========= 顯示對話文字 ==== */
+.message {
+    background-color: var(--message_backgroud);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.info_content {
+    height: 20em;
+}
+
+.text_content {
+    display: flex;
+}
+
+.s_head {
+    padding-right: 10px;
+}
+
+/* ========= user 輸入文字 ==== */
+.text_area {
+    resize: none;
+    padding: 10px;
+    outline: none;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.user_message {
+    display: flex;
+    justify-content: end;
+}
+
+.u_head {
+    padding-left: 10px;
+}
+
+/* ========= 送出 btn ==== */
+.btn_submit {
+    background-color: var(--message_backgroud);
+    border-radius: 10px;
+    /* border: 0; */
+    height: 3em;
+    width: 3em;
+    padding: 5px;
+    margin: 0 10px;
+    align-self: end;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    box-sizing: border-box;
+}

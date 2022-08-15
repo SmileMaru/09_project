@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message box</title>
+</head>
+<style>
+    :root {
+        --wrap_backgroud: #9CB0C6;
+        --inner_backgroud: #f1faee;
+        --message_backgroud: #caf0f8;
+        --box-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
+
+    }
+
+    /* ===== header ====== */
+    .full_screen {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .close_icon {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* ========= icon close ==== */
+    .xmark {
+        width: 1em;
+        text-align: right;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .robot_inner {
+        position: absolute;
+        border-radius: 20px;
+        border: 6px solid var(--wrap_backgroud);
+        padding: 20px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        background-color: var(--inner_backgroud);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .info_robot {
+        display: flex;
+    }
+
+    /* ========= 客服 icon ==== */
+    .s_head img {
+        vertical-align: top;
+    }
+
+    /* ========= 顯示對話文字 ==== */
+    .message {
+        background-color: var(--message_backgroud);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .info_content {
+        height: 20em;
+    }
+
+    .text_content {
+        display: flex;
+    }
+
+    .s_head {
+        padding-right: 10px;
+    }
+
+    /* ========= user 輸入文字 ==== */
+    .text_area {
+        resize: none;
+        padding: 10px;
+        outline: none;
+        box-shadow: var(--box-shadow);
+        border-radius: 10px;
+    }
+
+    /* ========= 送出 btn ==== */
+    .btn_submit {
+        background-color: var(--message_backgroud);
+        border-radius: 10px;
+        /* border: 0; */
+        height: 3em;
+        padding: 10px;
+        margin: 0 10px;
+        align-self: end;
+        box-shadow: var(--box-shadow);
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="robot_area full_screen">
+        <div class="wrap robot_inner">
+            <div class="close_icon">
+                <img class="xmark" src="./image/icon/xmark-solid.svg" alt="">
+            </div>
+            <div class="info_content">
+                <div class="info_robot">
+                    <div class="s_head">
+                        <img src="./image/icon/letter-s.png" alt="">
+                    </div>
+                    <div class="message">
+                        <p>Hello, can I help you?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text_content">
+                <textarea class="text_area" name="" id="" cols="30" rows="5" placeholder="輸入您的問題…"></textarea>
+                <button class="btn_submit">送出</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+/* Title */
+.title {
+    text-align: center;
+}
+
+* {
+    color: #2b4057;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* gap */
+.giveMeGap {
+    margin-bottom: 150px;
+}
+
+/* free trial button */
+.freeTrial_text,
+.freeTrial_button {
+    align-self: center;
+}
+
+.register_button:hover {
+    transform: scale(1.2);
+}
+
+.register_button {
+    background-color: #f49988;
+    font-size: 16px;
+    border-radius: 40px;
+    border: 1px solid transparent;
+    padding: 15px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.register_button a {
+    color: #fff;
+}
+
+/* logo - logIn part */
+.nav_container {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    box-shadow: 1px 1px 20px -6px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 1;
+    padding: 0px 40px 0px 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+
+.nav_bar {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.nav_bar_logo img {
+    vertical-align: top;
+}
+
+.logIn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logIn a {
+    padding: 10px 10px;
+    color: #2B4057;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.logIn .hover_stroke {
+    position: relative;
+}
+
+.current_page {
+    background-color: #fff3b0;
+    border-radius: 30px;
+}
+
+.logIn .hover_stroke::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #2B4057;
+    height: 2px;
+    transition: all .5s;
+}
+
+.logIn .hover_stroke:hover::after {
+    width: 100%;
+}
+
+/* section */
+.section_title {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+/* footer */
+.footer {
+    padding: 20px;
+    background-color: #2B4057;
+}
+
+.copy_right_menu_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_container p {
+    color: #fff;
+    align-self: center;
+}
+
+.footer_menu {
+    display: flex;
+}
+
+.footer_menu img {
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+}
+
+.footer_menu li {
+    padding: 0px 5px;
+}
+
+/* back to top */
+.goTop_parent {
+    position: relative;
+}
+
+.goTop {
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+}
+
+.goTop img {
+    vertical-align: top;
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --font-family: 'Silkscreen', cursive;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    #earth_container {
+        position: relative;
+        z-index: 9999;
+    }
+
+    .wrap_full {
+        background-image: linear-gradient(to bottom, #09203f 0%, #537895 100%);
+    }
+
+    .falling_star {
+        overflow: hidden;
+    }
+
+    .all_stars {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    @-webkit-keyframes falling {
+
+        0%,
+        100% {
+            opacity: 0;
+        }
+
+        70% {
+            opacity: 1;
+        }
+
+        0% {
+            transform: translate(100px, 0px);
+        }
+
+        100% {
+            transform: translate(0px, 200px);
+        }
+    }
+
+    @keyframes falling {
+
+        0%,
+        100% {
+            opacity: 0;
+        }
+
+        70% {
+            opacity: 1;
+        }
+
+        0% {
+            transform: translate(100px, 0px);
+        }
+
+        100% {
+            transform: translate(0px, 200px);
+        }
+    }
+
+    .allstars [class^=star] {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #fff;
+        -webkit-animation: falling 2s infinite;
+        animation: falling 2s infinite;
+    }
+
+    .allstars .star1 {
+        position: absolute;
+        left: 42%;
+        top: 16%;
+        -webkit-animation-delay: -0.1s;
+        animation-delay: -0.1s;
+    }
+
+    .allstars .star2 {
+        position: absolute;
+        left: 4%;
+        top: 49%;
+        -webkit-animation-delay: -0.2s;
+        animation-delay: -0.2s;
+    }
+
+    .allstars .star3 {
+        position: absolute;
+        left: 92%;
+        top: -25%;
+        -webkit-animation-delay: -0.3s;
+        animation-delay: -0.3s;
+    }
+
+    .allstars .star4 {
+        position: absolute;
+        left: 67%;
+        top: -18%;
+        -webkit-animation-delay: -0.4s;
+        animation-delay: -0.4s;
+    }
+
+    .allstars .star5 {
+        position: absolute;
+        left: 30%;
+        top: 35%;
+        -webkit-animation-delay: -0.5s;
+        animation-delay: -0.5s;
+    }
+
+    .allstars .star6 {
+        position: absolute;
+        left: 92%;
+        top: 3%;
+        -webkit-animation-delay: -0.6s;
+        animation-delay: -0.6s;
+    }
+
+    .allstars .star7 {
+        position: absolute;
+        left: 2%;
+        top: 48%;
+        -webkit-animation-delay: -0.7s;
+        animation-delay: -0.7s;
+    }
+
+    .allstars .star8 {
+        position: absolute;
+        left: 31%;
+        top: 1%;
+        -webkit-animation-delay: -0.8s;
+        animation-delay: -0.8s;
+    }
+
+    .allstars .star9 {
+        position: absolute;
+        left: 99%;
+        top: 39%;
+        -webkit-animation-delay: -0.9s;
+        animation-delay: -0.9s;
+    }
+
+    .allstars .star10 {
+        position: absolute;
+        left: 36%;
+        top: 11%;
+        -webkit-animation-delay: -1s;
+        animation-delay: -1s;
+    }
+
+    .allstars .star11 {
+        position: absolute;
+        left: 92%;
+        top: -11%;
+        -webkit-animation-delay: -1.1s;
+        animation-delay: -1.1s;
+    }
+
+    .allstars .star12 {
+        position: absolute;
+        left: 5%;
+        top: 37%;
+        -webkit-animation-delay: -1.2s;
+        animation-delay: -1.2s;
+    }
+
+    .allstars .star13 {
+        position: absolute;
+        left: 37%;
+        top: -5%;
+        -webkit-animation-delay: -1.3s;
+        animation-delay: -1.3s;
+    }
+
+    .allstars .star14 {
+        position: absolute;
+        left: 16%;
+        top: 0%;
+        -webkit-animation-delay: -1.4s;
+        animation-delay: -1.4s;
+    }
+
+    .allstars .star15 {
+        position: absolute;
+        left: 69%;
+        top: 12%;
+        -webkit-animation-delay: -1.5s;
+        animation-delay: -1.5s;
+    }
+
+    .allstars .star16 {
+        position: absolute;
+        left: 74%;
+        top: 20%;
+        -webkit-animation-delay: -1.6s;
+        animation-delay: -1.6s;
+    }
+
+    .allstars .star17 {
+        position: absolute;
+        left: 39%;
+        top: 40%;
+        -webkit-animation-delay: -1.7s;
+        animation-delay: -1.7s;
+    }
+
+    .allstars .star18 {
+        position: absolute;
+        left: 55%;
+        top: -3%;
+        -webkit-animation-delay: -1.8s;
+        animation-delay: -1.8s;
+    }
+
+    .allstars .star19 {
+        position: absolute;
+        left: 63%;
+        top: 23%;
+        -webkit-animation-delay: -1.9s;
+        animation-delay: -1.9s;
+    }
+
+    .marquee {
+        width: 100%;
+        overflow: hidden;
+        font-size: 60px;
+        color: #1d3557;
+        font-family: var(--font-family);
+        position: absolute;
+        top: 40%;
+        transform: rotate(-8deg);
+        /* z-index: 100; */
+        /* transition: all 0.5s; */
+    }
+
+    .marquee p {
+        text-shadow: 0 0 5px #e9defa, 0 0 10px #e9defa, 0 0 10px #e9defa, 0 0 10px #e9defa;
+    }
+
+    .enter {
+        position: relative;
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        font-family: var(--font-family);
+        font-size: 80px;
+        text-shadow: 0 0 10px #ffbe0b, 0 0 20px #ffbe0b, 0 0 30px #ffbe0b, 0 0 40px #ffbe0b;
+    }
+
+    .enter p:hover {
+        transition: ease-in;
+        animation: enter 0.5s 1;
+    }
+
+    @keyframes enter {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.1);
+        }
+    }
+</style>
+
+<body>
+    <section class="wrap_full">
+        <div class="falling_star">
+            <div class="allstars">
+                <div class="star1"></div>
+                <div class="star2"></div>
+                <div class="star3"></div>
+                <div class="star4"></div>
+                <div class="star5"></div>
+                <div class="star6"></div>
+                <div class="star7"></div>
+                <div class="star8"></div>
+                <div class="star9"></div>
+                <div class="star10"></div>
+                <div class="star11"></div>
+                <div class="star12"></div>
+                <div class="star13"></div>
+                <div class="star14"></div>
+                <div class="star15"></div>
+                <div class="star16"></div>
+                <div class="star17"></div>
+                <div class="star18"></div>
+                <div class="star19"></div>
+                <div class="star20"></div>
+
+            </div>
+        </div>
+        <marquee class="marquee" behavior="" direction="">
+            <p>SmileTalk The best online English learning website</p>
+        </marquee>
+        <a class="enter" href="./home_page.html">
+            <p>Enter Website</p>
+        </a>
+        <div id="earth_container"></div>
+    </section>
+
+    <script type="module" src="./demo.js"></script>
+</body>
+
+</html>

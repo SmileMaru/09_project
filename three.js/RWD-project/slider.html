@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-size: 14px;
+            color: #000;
+        }
+
+
+        .swiper {
+            margin: 100px auto;
+            width: 320px;
+            height: 500px;
+            border-radius: 5px;
+        }
+
+        .swiper-slide {
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+        }
+
+        .swiper-slide img:hover {
+            transform: scale(1.1);
+            transition: all 0.6s;
+        }
+
+        .swiper_MainTitle {
+            text-align: center;
+        }
+
+        .swiper_sub_title {
+            font-size: 16px;
+            font-weight: lighter;
+        }
+
+        .swiper_text {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+
+    <div class="swiper mySwiper">
+
+        <div class="swiper_MainTitle">
+            <h2>實用英文<br><span class="swiper_sub_title">General English</span></h2>
+        </div>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/image/course/weekend.jpg" alt="">
+                <div class="swiper_text">
+                    <h3>討論你的週末<br><span class="swiper_sub_title">Talking about your weeknd</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/course/return.jpg" alt="">
+                <h3>商品退貨<br><span class="swiper_sub_title">Returning a purchase</span></h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/course/walking.jpg" alt="">
+                <h3>城市漫遊<br><span class="swiper_sub_title">Getting around town</span></h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/course/story.jpg" alt="">
+                <h3>描述一個故事<br><span class="swiper_sub_title">Telling a story</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper_MainTitle">
+            <h2>商務英文<br><span class="swiper_sub_title">Business English</span></h2>
+        </div>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/image/course/business_contact.jpg" alt="">
+                <div class="swiper_text">
+                    <h3>建立商務聯絡<br><span class="swiper_sub_title">Making a business contact</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/course/interview.jpg" alt="">
+                <h3>工作面試<br><span class="swiper_sub_title">Interviewing</span></h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/course/meeting3.jpg" alt="">
+                <h3>討論可能的解決方案<br><span class="swiper_sub_title">Discussing possible soultions</span></h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/course/problem.jpg" alt="">
+                <h3>解決員工的問題<br><span class="swiper_sub_title">Solving an employee problem</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper_MainTitle">
+            <h2>旅遊英文<br><span class="swiper_sub_title">Travel English</span></h2>
+        </div>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/image/course/resturant.jpg" alt="">
+                <div class="swiper_text">
+                    <h3>預訂餐廳<br><span class="swiper_sub_title">Making a reservation</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/course/direction.jpg" alt="">
+                <h3>詢問方向<br><span class="swiper_sub_title">Asking for direction</span></h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/course/health.jpg" alt="">
+                <h3>身體不適<br><span class="swiper_sub_title">Getting sick</span></h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="/image/course/check-in.jpg" alt="">
+                <h3>登機<br><span class="swiper_sub_title">Checking in</span></h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: [0, 0, -400],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-120%", 0, -500],
+                },
+                next: {
+                    shadow: true,
+                    translate: ["120%", 0, -500],
+                },
+            },
+        });
+        var swiper3 = new Swiper(".mySwiper3", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-20%", 0, -1],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+        });
+        var swiper4 = new Swiper(".mySwiper4", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: [0, 0, -800],
+                    rotate: [180, 0, 0],
+                },
+                next: {
+                    shadow: true,
+                    translate: [0, 0, -800],
+                    rotate: [-180, 0, 0],
+                },
+            },
+        });
+        var swiper5 = new Swiper(".mySwiper5", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-125%", 0, -800],
+                    rotate: [0, 0, -90],
+                },
+                next: {
+                    shadow: true,
+                    translate: ["125%", 0, -800],
+                    rotate: [0, 0, 90],
+                },
+            },
+        });
+        var swiper6 = new Swiper(".mySwiper6", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    origin: "left center",
+                    translate: ["-5%", 0, -200],
+                    rotate: [0, 100, 0],
+                },
+                next: {
+                    origin: "right center",
+                    translate: ["5%", 0, -200],
+                    rotate: [0, -100, 0],
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

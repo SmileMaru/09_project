@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<style>
+    .outer_padding_center_box {
+        max-width: 1000px;
+        width: 100%;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .payment_container {
+        display: flex;
+    }
+
+    .payment_method ul {
+        padding: 0px;
+    }
+
+    .payment_method li {
+        padding: 15px;
+    }
+
+    .payment_method span {
+        padding: 10px;
+    }
+
+    .pament_content {
+        width: 70%;
+    }
+
+    .payment_total {
+        width: 30%;
+    }
+
+    /* order */
+    .price_cal {
+        display: flex;
+        justify-content: space-between;
+
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="outer_padding_center_box">
+            <h1>Payment<br><span>結帳</span></h1>
+            <div class="payment_container">
+
+                <div class="pament_content">
+                    <h2>付款方式<br><span>Payment methods</span></h2>
+                    <div class="payment_method">
+                        <ul>
+                            <li><input class="pay_type" type="radio"><span>Line Pay</span></li>
+                            <li><input class="pay_type" type="radio"><span>Apple pay</span><img src="" alt=""></li>
+                            <li><input class="pay_type" type="radio"><span>Credit card</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="payment_total">
+                    <h3>Order Summary</h3>
+                    <div class="summary_part">
+                        <p>1234</p>
+                        <div class="price_cal">
+                            <p>原價：</p>
+                            <p>$ 1,300</p>
+                        </div>
+                        <div class="price_cal">
+                            <p>折扣：</p>
+                            <p>$ 300</p>
+                        </div>
+                        <hr>
+                        <div class="price_cal">
+                            <p>總計：</p>
+                            <p>$ 1,000</p>
+                        </div>
+                    </div>
+
+
+                    <a href="#"><button>確定付款</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

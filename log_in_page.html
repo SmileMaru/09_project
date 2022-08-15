@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>logIn</title>
+    <style>
+        header {
+            height: 100vh;
+            background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+            background-repeat: no-repeat;
+        }
+
+        #input_box {
+            background-color: #f7f7f7;
+            font-weight: 200;
+            border: 1px solid transparent;
+            padding: 18px 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+
+        .logIn_input {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .log_in_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 6em;
+        }
+
+        .log_in_box {
+            height: auto;
+            width: 20em;
+            padding: 2em;
+            margin: 2em;
+            box-shadow: 4px 5px 20px 0px rgb(59 57 57 / 20%);
+            background-color: #fff;
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        .btn {
+            margin-bottom: 25px;
+            background-color: #f49988;
+            border-radius: 10px;
+            line-height: 30px;
+            border: 1px solid transparent;
+            padding: 10px;
+            box-shadow: 5px 5px 16px rgb(10, 10, 10, 10%);
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* ====== nav part ===== */
+        nav {
+            width: 100%;
+            z-index: 1;
+            background-color: #fff;
+            box-shadow: 1px 1px 20px -6px rgb(0 0 0 / 20%);
+            position: fixed;
+        }
+
+        .nav_logo_image {
+            width: clamp(80px, calc((100vw - 375px) / 10.650 + 50px), 110px);
+            height: auto;
+            vertical-align: top;
+            padding: 10px 40px;
+        }
+
+        .book_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sign_up_link {
+            padding: 0 10px;
+            color: #f49988;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- logo 登入 -->
+            <div class="nav_container">
+                <div class="nav_bar_logo">
+                    <a href="./index.html"><img class="nav_logo_image" src="./image/icon/logo.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+        <div class="log_in_container">
+            <div class="log_in_box">
+                <img src="./image/icon/profile.png" alt="">
+                <h1>Log in</h1>
+                <div class="logIn_input">
+                    <input type="text" placeholder="Email" id="input_box">
+                    <input type="password" placeholder="Password" id="input_box">
+                    <a href="#" class="btn">登入</a>
+                </div>
+                <div class="forgot_password">
+                    <a href="">
+                        <img class="unlock_icon" src="./image/icon/unlock-keyhole-solid.svg" alt="" width="13px"
+                            height="13px">
+                        Forgot your password?
+                    </a>
+                    <div class="sign_up_part">
+                        <p>第一次來 SmartTalk?<a class="sign_up_link" href="./Sign_up.html">註冊</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
